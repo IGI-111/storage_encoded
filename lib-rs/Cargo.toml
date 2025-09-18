@@ -1,9 +1,11 @@
 [package]
 name = "storage_encoded"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 description = "Direct off-chain storage access for Fuel smart contracts - no getters, no simulation, just read"
 license = "Apache-2.0"
+repository = "https://github.com/IGI-111/storage_deque"
+readme = "../lib/README.md"
 
 [dependencies]
 anyhow = "1.0.99"

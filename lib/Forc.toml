@@ -3,7 +3,8 @@ authors = ["igi-111"]
 entry = "main.sw"
 license = "Apache-2.0"
 name = "storage_encoded"
-version = "0.1.0"
+version = "0.1.1"
 description = "Direct off-chain storage access for Fuel smart contracts - no getters, no simulation, just read"
+repository = "https://github.com/IGI-111/storage_encoded"
 
 [dependencies]
