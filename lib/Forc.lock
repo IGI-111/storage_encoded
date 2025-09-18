@@ -1,0 +1,18 @@
+[[package]]
+name = "scratch"
+source = "member"
+dependencies = [
+    "std",
+    "storage_deque",
+]
+
+[[package]]
+name = "std"
+version = "0.69.1"
+source = "registry+std?0.69.1#QmbPunScay4xpfHKpxQ71dFKXSiyJuPP8P8YhgX5Dkmzm9!"
+
+[[package]]
+name = "storage_deque"
+version = "0.2.0"
+source = "registry+storage_deque?0.2.0#Qmdd4DtDr1MWvvCjCZZ6oDGNrNaS2kUfvjHAdRrfZFeCUL!"
+dependencies = ["std"]

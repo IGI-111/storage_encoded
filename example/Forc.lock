@@ -1,0 +1,17 @@
+[[package]]
+name = "example"
+source = "member"
+dependencies = [
+    "std",
+    "storage_encoded",
+]
+
+[[package]]
+name = "std"
+version = "0.69.1"
+source = "registry+std?0.69.1#QmbPunScay4xpfHKpxQ71dFKXSiyJuPP8P8YhgX5Dkmzm9!"
+
+[[package]]
+name = "storage_encoded"
+source = "path+from-root-E13C7577786816C2"
+dependencies = ["std"]
