@@ -2,12 +2,18 @@
 name = "storage_encoded"
 version = "0.1.0"
 edition = "2024"
+description = "Direct off-chain storage access for Fuel smart contracts - no getters, no simulation, just read"
+license = "Apache-2.0"
 
 [dependencies]
 anyhow = "1.0.99"
 fuel-core-client = "0.46.0"
 fuel-types = "0.62.0"
 fuels = "0.74.0"
-local-tx-executor = { git = "https://github.com/FuelLabs/fuel-utils.git", rev = "a6eb5890e43479d3fb57006187fbec789addd129" }
+futures = "0.3.31"
+# local-tx-executor = { git = "https://github.com/FuelLabs/fuel-utils.git", rev = "a6eb5890e43479d3fb57006187fbec789addd129" }
 sha2 = "0.10.9"
 tokio = "1.47.1"
+fuel-vm = "0.62.0" 
+serde = "1.0.210"
+serde_json = "1.0.132"

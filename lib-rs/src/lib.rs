@@ -7,8 +7,11 @@ use fuels::{
     core::codec::ABIDecoder,
     types::{Token, param_types::ParamType},
 };
-use local_tx_executor::contract_state_loader::ContractStateLoader;
+// use local_tx_executor::contract_state_loader::ContractStateLoader;
+use contract_state_loader::ContractStateLoader;
 use sha2::{Digest, Sha256};
+
+mod contract_state_loader;
 
 pub async fn decode_from_storage(
     client: Arc<FuelClient>,
@@ -16,7 +19,6 @@ pub async fn decode_from_storage(
     param_type: &ParamType,
     slot: &Bytes32,
 ) -> Result<Token, anyhow::Error> {
-    let val: Bytes32 = "0x1f".parse().unwrap();
     let block_height = client
         .chain_info()
         .await
